@@ -9,10 +9,10 @@
   </head>
   <body ng-controller="weatherCtrl">
     <div ui-view></div>
-    
-    <clock></clock>
+
+    <clock id="datetime"></clock>
     <footer><ul>
-      <!--Directives: clock and "Welcome to ...."-->
+      <!--Directives: clock and "hello from ...."-->
       <li><a ui-sref='home'>Home</a></li>
       <li><a ui-sref='about'>About</a></li>
       <li><a ui-sref='contact'>Contact</a></li>
@@ -20,6 +20,7 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
     <script src="Scripts/app.js"></script>
     <script src="Scripts/Controllers/weatherController.js"></script>
     <script src="Scripts/mainService.js"></script>
