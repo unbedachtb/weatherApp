@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html ng-app="app">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body ng-controller="weatherCtrl">
-    <form class="inputParent" method="post" ng-submit="showWeather(place)">
-      <input type="text" placeholder="Enter city here" ng-model="place">
-    </form>
+<body ng-controller="weatherCtrl">
+  <div class="parentDiv">
     <hello></hello>
     {{data}}
     {{time}}
-    <clock id="datetime"></clock>
+    <div class=styleClock><clock id="datetime"></clock></div>
+    <form class="inputParent" method="post" ng-submit="showWeather(place)">
+      <input type="text" placeholder="Enter city here" ng-model="place">
+    </form>
+  </div>
   </body>
-</html>

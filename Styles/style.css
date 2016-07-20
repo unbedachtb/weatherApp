@@ -1,8 +1,24 @@
+
+.parentDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+}
+.inputParent {
+  text-align: center;
+}
+.styleClock {
+  text-align: center;
+}
 ul {
   display: flex;
   justify-content: space-around;
-  
 }
 li {
   justify-content: space-around;
+  vertical-align: bottom;
+}
+.styleLink {
+  text-decoration: none;
 }
