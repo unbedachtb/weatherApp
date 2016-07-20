@@ -5,7 +5,6 @@ angular.module("app").controller("weatherCtrl", function($scope, mainService){
   .then(function(results) {
       $scope.data = results;
       $scope.show = true;
-
     });
   };
 });

@@ -5,11 +5,12 @@
     <title></title>
   </head>
   <body ng-controller="weatherCtrl">
-    <form class="" method="post" ng-submit="showWeather(place)">
+    <form class="inputParent" method="post" ng-submit="showWeather(place)">
       <input type="text" placeholder="Enter city here" ng-model="place">
     </form>
     <hello></hello>
     {{data}}
     {{time}}
+    <clock id="datetime"></clock>
   </body>
 </html>

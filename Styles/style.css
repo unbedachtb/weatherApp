@@ -1,3 +1,8 @@
-#hi {
-  display: none;
+ul {
+  display: flex;
+  justify-content: space-around;
+  
+}
+li {
+  justify-content: space-around;
 }
