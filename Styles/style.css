@@ -1,29 +1,22 @@
 
-
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 body {
   background-image:url('https://images.unsplash.com/photo-1437149310981-0f2690a6069d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8081b9a1ef136dd027fe7e320b08cbed');
   background-size: cover;
   height: 20vh;
-  background-repeat: no-repeat;
 }
-.parentDiv {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-around;*/
-  /*height: 2vh;*/
-  /*border: 3px green solid;*/
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  /*border: 3px black solid;*/
 }
-.inputParent {
-  text-align: center;
-  margin-top: 80px;
-  /*border: 3px blue solid;*/
-
-}
-input, select, textarea{
-    font-size: 80px;
-    font-family: 'Roboto Condensed', sans-serif;
+.styleLink {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  /*border: 3px salmon solid;*/
 }
 .styleClock {
   text-align: center;
@@ -32,6 +25,20 @@ input, select, textarea{
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
   /*border: 3px purple solid;*/
+}
+.inputParent {
+  text-align: center;
+  margin-top: 80px;
+  /*border: 3px blue solid;*/
+}
+input {
+  /*border: 3px seagreen solid;*/
+  width: 600px;
+  height: 80px;
+}
+input, select, textarea{
+    font-size: 80px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .styleText {
   text-align: center;
@@ -48,23 +55,6 @@ input, select, textarea{
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
   /*border: 3px orange solid;*/
-}
-ul {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-  /*border: 3px black solid;*/
-}
-.styleLink {
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-  color: white;
-  /*border: 3px salmon solid;*/
-}
-input {
-  /*border: 3px seagreen solid;*/
-  width: 600px;
-  height: 80px;
 }
 .about {
   text-align: center;
