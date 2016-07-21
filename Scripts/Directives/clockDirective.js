@@ -4,7 +4,7 @@ angular.module('app').directive('clock', function() {
         link: function(scope, elem, attr) {
 
             function update() {
-                var now = moment().format('MMMM Do YYYY, h:mm:ss a');
+                var now = moment().format('h:mm a');
                 $('#datetime').html(now);
             }
             setInterval(update, 1000);

@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Time and Temp</title>
     <link rel="stylesheet" href="/styles/reset.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/styles/style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body ng-controller="weatherCtrl">
-    <div ui-view></div>
-
-
-    <footer class="parentDiv"><ul>
+    <header class="parentDiv"><ul>
       <li><a ui-sref='home' class="styleLink">Home</a></li>
       <li><a ui-sref='about' class="styleLink">About</a></li>
       <li><a ui-sref='contact' class="styleLink">Contact</a></li>
-    </ul></footer>
+    </ul></header>
+    <div ui-view></div>
+
+
+
+
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.js"></script>
     <script src="Scripts/app.js"></script>
     <script src="Scripts/Controllers/weatherController.js"></script>
     <script src="Scripts/mainService.js"></script>
     <script src="Scripts/Directives/helloDirective.js"></script>
     <script src="Scripts/Directives/clockDirective.js"></script>
+    <script src="Scripts/image.js"></script>
   </body>
 </html>

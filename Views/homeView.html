@@ -1,11 +1,11 @@
-<body ng-controller="weatherCtrl">
+<section ng-controller="weatherCtrl">
   <div class="parentDiv">
-    <hello></hello>
-    {{data}}
     {{time}}
     <div class=styleClock><clock id="datetime"></clock></div>
     <form class="inputParent" method="post" ng-submit="showWeather(place)">
-      <input type="text" placeholder="Enter city here" ng-model="place">
+      <input type="text" placeholder="Enter location here" ng-model="place">
     </form>
+    <hello></hello>
+    <p class="styleData">{{data}}<p>
   </div>
-  </body>
+</section>
