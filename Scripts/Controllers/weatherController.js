@@ -7,6 +7,7 @@ angular.module("app").controller("weatherCtrl", function($scope, mainService){
       $scope.data = results.main.temp;
       $scope.cityName = results.name;
       $scope.show = true;
+      $scope.weather = results.weather[0].description;
     });
   };
 });
