@@ -1,1 +1,5 @@
-<p ng-show="show" class="styleText"><span class="hello">Hello from {{cityName}}!!</span> <br> The weather here is currently {{data}} &deg; with {{weather}}</p>
+<div class="modal" ng-show="show2">
+    <div class="modal-content">
+        <span class="close" ng-click="modalClose()">x</span>
+        <p class="modalText"><span class="city">{{cityName}}</span> <br> <span class="temp">{{data | number:0}}&deg;</span> <br> <span class="weather">{{weather}}</span></p>
+    </div>
