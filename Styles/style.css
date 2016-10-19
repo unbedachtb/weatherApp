@@ -86,15 +86,15 @@ input, select, textarea{
 }
 .about {
   text-align: center;
-  margin-top: 150px;
-  color: white;
+  margin-top: 60px;
+  color: darkgreen;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 30px;
 }
 .contact {
   text-align: center;
   margin-top: 150px;
-  color: white;
+  color: darkgreen;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 30px;
 }

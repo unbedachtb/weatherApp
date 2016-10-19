@@ -9,6 +9,7 @@ angular.module("app").controller("weatherCtrl", function($scope, mainService) {
                 $scope.cityName = results.name;
                 // $scope.show = true;
                 $scope.weather = results.weather[0].description;
+
                 if($scope.weather.includes("rain")) {
                   console.log('rain');
                   $(".modal-content").css({
@@ -24,13 +25,16 @@ angular.module("app").controller("weatherCtrl", function($scope, mainService) {
                   console.log('clear');
                   $(".modal-content").css("background-image", "url(https://images.unsplash.com/photo-1430263326118-b75aa0da770b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=74d94b3d861f5334f9ae55001c6010cc)");
                 }
+                else if($scope.weather.includes("snow")) {
+                  $(".modal-content").css("background-image", "url(https://images.unsplash.com/photo-1468476775582-6bede20f356f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=50c6901b794046c29f94700a8b940ad4)");
+                }
                 else if($scope.weather.includes("thunder")) {
                   console.log('clear');
                   $(".modal-content").css("background-image", "url(https://images.unsplash.com/photo-1461511669078-d46bf351cd6e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7d70000aca951c4030093664ace2b986)");
                 }
                 else if($scope.weather.includes("mist")) {
                   console.log('clear');
-                  $(".modal-content").css("background-image", "url(https://images.unsplash.com/photo-1415628630193-e0372232b489?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=753bff41e34c1ef0c71a437a1c8debf9)");
+                  $(".modal-content").css("background-image", "url(https://images.unsplash.com/photo-1431887773042-803ed52bed26?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=65b80c72d88022965f20b535b5411918)");
                 }
                 else {
                   console.log('else');
@@ -43,7 +47,6 @@ angular.module("app").controller("weatherCtrl", function($scope, mainService) {
                 $scope.modalClose = function() {
                     $scope.show2 = false;
                 };
-
             });
     };
 });
