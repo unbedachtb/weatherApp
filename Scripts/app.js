@@ -2,16 +2,16 @@ angular.module("app", ["ui.router"]).config(function($stateProvider, $urlRouterP
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: '../Views/homeView.html',
+            templateUrl: '../homeView.html',
             controller: 'weatherCtrl'
         })
         .state('about', {
             url: '/about',
-            templateUrl: '../Views/aboutView.html'
+            templateUrl: '../aboutView.html'
         })
         .state('contact', {
             url: '/contact',
-            templateUrl: '../Views/contactView.html'
+            templateUrl: '../contactView.html'
         });
     $urlRouterProvider
         .otherwise('/');
